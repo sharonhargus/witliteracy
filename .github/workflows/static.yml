@@ -21,6 +21,11 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+# Opt the Node-based actions into Node 24 ahead of the June 2026 default
+# flip; silences the "Node.js 20 actions are deprecated" warning.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   # Single deploy job since we're just deploying
   deploy:
@@ -33,6 +38,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Self-enable Pages on the repo if it hasn't been turned on yet.
+          # Without this the very first run fails with "Get Pages site
+          # failed: Not Found" and the user has to click through the
+          # repo Settings → Pages UI.
+          enablement: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
