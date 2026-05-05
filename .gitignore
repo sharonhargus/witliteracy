@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+._*
+
+# Python (used by tools/build_units.py during local rebuilds)
+.venv/
+__pycache__/
+*.pyc
+
+# Editor scratch
+*.swp
+*.bak
+.vscode/
+.idea/

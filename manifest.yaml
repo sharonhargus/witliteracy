@@ -1,0 +1,204 @@
+# Session manifest for the Witsuwit'en Literacy site.
+#
+# Edit titles / blurbs / dates here, then run:
+#     python tools/build_units.py
+# to regenerate units/lit{1,2}-NN.html and the two course-index pages.
+#
+# `ia_item` is the Internet Archive item id where the lecture videos live.
+# Until the IA upload happens, leave the placeholder; the embedded videos
+# will 404 but every other piece of the site renders.
+#
+# `video_path` is the path inside the IA item (no leading slash). The full
+# embed URL is computed as
+#     https://archive.org/download/{ia_item}/{video_path}
+#
+# `handout` and `answers` are paths to PDFs *inside this repo*, relative
+# to the repo root. `answers` is null for Literacy 1 (no answer keys
+# exist for that volume).
+
+ia_item: "witsuwiten-literacy"
+
+# ── Witsuwit'en Literacy 1 — Writing system & orthography (March 2019)
+literacy_1:
+  - id: lit1-01
+    session_no: 1
+    date: "2019-03-04"
+    title: "Overview of the Witsuwit'en writing system"
+    blurb: >-
+      A first look at the Witsuwit'en alphabet — what symbols stand for
+      what sounds, and how they map onto English-keyboard letters.
+    video_path: "literacy_1/3-4-19.mp4"
+    handout: "pdfs/literacy_1/3-4-19_wit_literacy_handout.pdf"
+    answers: null
+
+  - id: lit1-02
+    session_no: 2
+    date: "2019-03-06"
+    title: "Consonants spelled with h and ʼ (review)"
+    blurb: >-
+      Review of the consonants that include an h or a glottal stop in
+      their spelling, with practice reading the symbols.
+    video_path: "literacy_1/3-6-19.mp4"
+    handout: "pdfs/literacy_1/3-6-19_wit_literacy_handout.pdf"
+    answers: null
+
+  - id: lit1-03
+    session_no: 3
+    date: "2019-03-11"
+    title: "Consonants that can end a word"
+    blurb: >-
+      Of the 34 Witsuwit'en consonants, only 21 can occur in word-final
+      position. This session walks through which ones, and why.
+    video_path: "literacy_1/3-11-19.mp4"
+    handout: "pdfs/literacy_1/3-11-19_wit_literacy_handout.pdf"
+    answers: null
+
+  - id: lit1-04
+    session_no: 4
+    date: "2019-03-13"
+    title: "GG"
+    blurb: >-
+      One of the back-of-the-throat sounds. Spelled with two letters
+      but representing a single sound; never word-final.
+    video_path: "literacy_1/3-13-19.mp4"
+    handout: "pdfs/literacy_1/3-13-19_wit_literacy_handout.pdf"
+    answers: null
+
+  - id: lit1-05
+    session_no: 5
+    date: "2019-03-18"
+    title: "GG, K, and Kʼ"
+    blurb: >-
+      Three of the five back-of-the-throat sounds, contrasted with
+      their nearest English equivalents and with each other.
+    video_path: "literacy_1/3-18-19.mp4"
+    handout: "pdfs/literacy_1/3-18-19_wit_literacy_handout.pdf"
+    answers: null
+
+  - id: lit1-06
+    session_no: 6
+    date: "2019-03-20"
+    title: "More on GH"
+    blurb: >-
+      Word-final GH and the vowels it can follow. Subtle in
+      pronunciation — sometimes nearly silent.
+    video_path: "literacy_1/3-20-19.mp4"
+    handout: "pdfs/literacy_1/3-20-19_wit_literacy_handout.pdf"
+    answers: null
+
+  - id: lit1-07
+    session_no: 7
+    date: "2019-03-27"
+    title: "N and M"
+    blurb: >-
+      The two nasal consonants and the kinds of consonant clusters
+      they form at the start of a word.
+    video_path: "literacy_1/3-27-19.mp4"
+    handout: "pdfs/literacy_1/3-27-19_wit_literacy_handout.pdf"
+    answers: null
+
+  - id: lit1-08
+    session_no: 8
+    date: "2019-03-29"
+    title: "G vs. C vs. Cʼ"
+    blurb: >-
+      Three phonetically similar consonants, distinguished in
+      Witsuwit'en. Includes Cʼ, an exploding sound common in First
+      Nations languages but not English.
+    video_path: "literacy_1/3-29-19.mp4"
+    handout: "pdfs/literacy_1/3-29-19_wit_literacy_handout.pdf"
+    answers: null
+
+# ── Witsuwit'en Literacy 2 — Grammar fundamentals (Nov 2019 – Jan 2020)
+literacy_2:
+  - id: lit2-01
+    session_no: 1
+    date: "2019-11-18"
+    title: "Possessive prefixes — warm-up and writing practice"
+    blurb: >-
+      First lesson of volume 2. Warm-up vocabulary writing, then
+      systematic practice with possessive prefixes on common nouns.
+    video_path: "literacy_2/11-18-19_1.mp4"
+    handout: "pdfs/literacy_2/11-18-19_wit_lit2_1_worksheet.pdf"
+    answers: "pdfs/literacy_2/11-18-19_wit_lit2_1_answers.pdf"
+
+  - id: lit2-02
+    session_no: 2
+    date: "2019-11-25"
+    title: "Review of possessive prefixes"
+    blurb: >-
+      Continuing from session 1 — translating and writing the
+      remaining possessed forms of a paradigm of nouns.
+    video_path: "literacy_2/11-25-19_2.mp4"
+    handout: "pdfs/literacy_2/11-25-19_wit_lit2_2_worksheet.pdf"
+    answers: "pdfs/literacy_2/11-25-19_wit_lit2_2_answers.pdf"
+
+  - id: lit2-03
+    session_no: 3
+    date: "2019-12-03"
+    title: "Inner subject prefixes to verbs (part 1)"
+    blurb: >-
+      Witsuwit'en verbs mark the seven subjects with a mix of inner
+      and outer prefixes. This session introduces the inner ones —
+      ‘I’, ‘you (sg.)’, ‘we (du.)’, ‘you (pl.)’.
+    video_path: "literacy_2/12-3-19_3.mp4"
+    handout: "pdfs/literacy_2/12-3-19_wit_lit2_3_worksheet.pdf"
+    answers: "pdfs/literacy_2/12-3-19_wit_lit2_3_answers.pdf"
+
+  - id: lit2-04
+    session_no: 4
+    date: "2019-12-09"
+    title: "Inner subject prefixes to verbs (part 2)"
+    blurb: >-
+      Dïncʼiy/dïncʼey, lesson four. The remaining inner subject
+      prefixes and the shape variations they take depending on the
+      following sound.
+    video_path: "literacy_2/12-9-19_4.mp4"
+    handout: "pdfs/literacy_2/12-9-19_wit_lit2_4_worksheet.pdf"
+    answers: "pdfs/literacy_2/12-9-19_wit_lit2_4_answers.pdf"
+
+  - id: lit2-05
+    session_no: 5
+    date: "2019-12-16"
+    title: "Outer subject prefixes to verbs"
+    blurb: >-
+      Kwileʼ, lesson five. ‘we’ and ‘they’ are marked by outer
+      subject prefixes — positionally distinct from the inner ones in
+      sessions 3–4.
+    video_path: "literacy_2/12-16-19_5.mp4"
+    handout: "pdfs/literacy_2/12-16-19_wit_lit2_5_worksheet.pdf"
+    answers: "pdfs/literacy_2/12-16-19_wit_lit2_5_answers.pdf"
+
+  - id: lit2-06
+    session_no: 6
+    date: "2019-12-23"
+    title: "Subject prefixes — writing practice (review)"
+    blurb: >-
+      Gïstan, lesson six. Filling out the rest of a verb paradigm
+      from two given forms, across all seven subject categories.
+    video_path: "literacy_2/12-23-19_6.mp4"
+    handout: "pdfs/literacy_2/12-23-19_wit_lit2_6_worksheet.pdf"
+    answers: "pdfs/literacy_2/12-23-19_wit_lit2_6_answers.pdf"
+
+  - id: lit2-07
+    session_no: 7
+    date: "2020-01-02"
+    title: "Dikʼaltʼiy — lesson seven"
+    blurb: >-
+      Warm-up writing practice followed by further work on possessive
+      forms (e.g. ‘fish’ vs. ‘his fish’, ‘saliva’ vs. ‘my saliva’).
+    video_path: "literacy_2/1-2-20_7.mp4"
+    handout: "pdfs/literacy_2/1-2-20_wit_lit2_7_worksheet.pdf"
+    answers: "pdfs/literacy_2/1-2-20_wit_lit2_7_answers.pdf"
+
+  - id: lit2-08
+    session_no: 8
+    date: "2020-01-03"
+    title: "Areal w(i)- ~ ho-"
+    blurb: >-
+      Kʼidïncʼey/kʼidïncʼiy, lesson eight. The areal prefix and the
+      class of nouns that require it (e.g. yikh ‘house’, keyikh
+      ‘village’).
+    video_path: "literacy_2/1-3-20_8.mp4"
+    handout: "pdfs/literacy_2/1-3-20_wit_lit2_8_worksheet.pdf"
+    answers: "pdfs/literacy_2/1-3-20_wit_lit2_8_answers.pdf"
