@@ -172,9 +172,11 @@ def main() -> int:
         print(f"\nERROR: upload failed: {exc}", file=sys.stderr)
         return 1
 
-    # Post-upload sanity check.
+    # Post-upload sanity check. ``item.files`` is a list of dicts in
+    # current internetarchive versions, not File objects.
     item = get_item(item_id)
-    have = {f.name for f in item.files}
+    have = {(f.get("name") if isinstance(f, dict) else getattr(f, "name", ""))
+            for f in item.files}
     expected = set(files.keys())
     missing = expected - have
     if missing:
