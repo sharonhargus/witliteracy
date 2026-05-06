@@ -196,7 +196,7 @@ def main() -> int:
         },
         2: {
             "title": "Witsuwit'en Literacy 2",
-            "subtitle": "Grammar fundamentals — November 2019 to January 2020",
+            "subtitle": "Difficult Sounds — November 2019 to January 2020",
             "dir": "literacy_2",
         },
     }
